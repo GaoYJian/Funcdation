@@ -1,0 +1,68 @@
+Git command:
+Reference:https://git-scm.com/book/zh/v2
+
+1.ssh-keygen -t rsa -C "Github_Account"
+make the ssh key to let command line can login github.
+also you need to do some setp with github website
+here are the step
+while you login github website
+a navigate to user setting - SSH Keys - New SSH Key
+b type the title & Key(you can find the key after you generate the key with above command line.default in username/.ssh/id_rsa.pub)
+
+2.ssh -T git@github.com
+after you do the step 1 you can login with this command
+
+3.git init
+init git,make a folder name .git to store the information of version
+
+4.git status
+show the git status of folder.Color red mean not add to git.Color green means add to git
+
+5.git add
+you can add to git with this command.Both file and folder are support.
+After you add file or folder to git you can check it with git status.
+
+6.git config --global user.name "your name"
+  git config --global user.email "411219209@qq.com"
+Set your information of upload github
+
+7.git config --list
+check your git config
+
+8.git help config
+get the help document offline
+
+9.git clone htt
+ps://github.com/GaoYJian/Sudoku.git
+get the github project with specific website
+
+10.git diff
+get the diff between two file
+
+11.git commit
+after you add file or folder you should use git commit to commit this file or folder
+you can use -m to add message
+you can use -a to skip the add step only use git commit
+
+12.git rm
+remove file or folder in git
+
+13.git mv file_from file_to
+move file in git
+
+14.git log
+check the git log
+also you can use -p number to show the lastest number times
+
+15.git remote 
+you can add your remote git with git remote add shortname https://github.com/GaoYJian/Sudoku.git
+you can show the remote git with git remote -v
+you can delete remote git with remote rm remotename
+
+16.git fetch/git pull
+like git clone, but you need to do the git init first.
+you can use whole website or remote shortname
+
+17.git push
+upload commited file to github
+
